@@ -1,0 +1,116 @@
+html{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 16px;
+    background-color: #f0f0f4;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid black;
+}
+
+header .logo{
+    width: 150px;
+    margin-left: 50px;
+    border-radius: 5px;
+}
+
+nav{
+    width: 300px; 
+    margin-right: 50px;
+    margin-left: 50px;
+}
+
+nav ul{
+    display: flex;
+    padding: 0; 
+    list-style: none;
+    justify-content: space-between;
+}
+
+.welcome-text{
+    background-color: rgb(0, 0, 0);
+    opacity: 0.7;
+}
+
+.welcome-banner{
+
+    color: rgb(255, 255, 255);
+    background-image: url("../images/staring_at_ocean.JPG");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 30rem; 
+    display: flex; 
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    margin: 50px auto; 
+    max-width: 1073px;
+}
+
+.about{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 600px;
+    min-width: 200px;
+    margin: auto; 
+}
+.columns{
+    display: grid; 
+    grid-template-columns: repeat(3,1fr);
+    margin: auto;
+    max-width: 1000px
+}
+
+.images{
+    display: flex; 
+    justify-content: center;
+
+    margin: auto; 
+}
+
+.image-container {
+    overflow: hidden; 
+    margin: 10px; 
+}
+
+.image-container img {
+    max-width: 100%; 
+    height: auto; 
+    display: block; 
+}
+.col{
+    background-color: #ffffff;
+    display: flex; 
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border: 2px #ffffff solid; 
+    border-radius: 10px;
+    margin: 20px 20px;
+    padding: 10px 10px;
+    transition: transform 2s ease, box-shadow 0.3s ease;
+}
+
+.col:hover{
+    box-shadow: 10px 10px 5px rgb(62, 60, 60);
+    transform: scale(1);
+}
+
+@media only screen and (max-width: 800px) {
+    .about{
+        margin-right: 50px;
+        margin-left: 30px;
+    }
+
+    .columns{
+        display: flex;
+        flex-direction: column;
+    }
+}
