@@ -3,24 +3,31 @@ html{
     font-size: 16px;
     background-color: #f0f0f4;
 }
+.column-link{
+    text-decoration: none;
+    color: black;
+}
 
-header{
+.contact{
+    color: black;
+    text-decoration: none;
+}
+
+.contact:hover{
+    text-decoration: underline;
+}
+
+
+nav{
+    margin-right: 50px;
+    margin-left: 50px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    border-bottom: 1px solid black;
 }
 
-header .logo{
-    width: 150px;
-    margin-left: 50px;
-    border-radius: 5px;
-}
-
-nav{
-    width: 300px; 
-    margin-right: 50px;
-    margin-left: 50px;
+.logo{
+    width: 62px;
 }
 
 nav ul{
@@ -38,7 +45,7 @@ nav ul{
 .welcome-banner{
 
     color: rgb(255, 255, 255);
-    background-image: url("../images/staring_at_ocean.JPG");
+    background-image: url("../../resources/images/staring_at_ocean.JPG");
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -47,7 +54,7 @@ nav ul{
     justify-content: center;
     text-align: center;
     flex-direction: column;
-    margin: 50px auto; 
+    margin: auto; 
     max-width: 1073px;
 }
 
@@ -70,7 +77,6 @@ nav ul{
 .images{
     display: flex; 
     justify-content: center;
-
     margin: auto; 
 }
 
@@ -92,7 +98,7 @@ nav ul{
     align-items: center;
     text-align: center;
     border: 2px #ffffff solid; 
-    border-radius: 10px;
+    border-radius: 20px;
     margin: 20px 20px;
     padding: 10px 10px;
     transition: transform 2s ease, box-shadow 0.3s ease;
@@ -101,6 +107,93 @@ nav ul{
 .col:hover{
     box-shadow: 10px 10px 5px rgb(62, 60, 60);
     transform: scale(1);
+    
+}
+.photo:hover{
+    box-shadow: 10px 10px 5px rgb(62, 60, 60);
+    transform: scale(1);
+}
+
+.card{
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 5px;
+    width: 500px;
+    height: 600px;
+    padding:20px 20px 20px 20px;
+    background-color: #ffffff;
+    border: 2px solid #ffffff
+}
+
+.picture-text{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin: auto;
+}
+.home-page-images{
+    height: auto;
+    width: 600px;
+    height: 80px;
+}
+
+.center-image {
+    display: flex;
+    margin-right: 30px;
+}
+
+.city-image{
+    width:300px;
+    margin: auto;
+}
+
+.image-text{
+    margin: auto;
+}
+
+.photos-card{
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
+
+    width:1500px;
+}
+.image-carousel{
+    display: flex; 
+    justify-content: center;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.slider-image{
+    height: 300px;
+    width: 300px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    padding:20px 20px 20px 20px
+    
+}
+.photo{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 20px;
+    margin: auto;
+    background-color: #ffffff;
+    border: 2px solid #ffffff;
+    transition: transform 2s ease, box-shadow 0.3s ease;
+}
+
+.caption{
+    margin: auto;
+}
+.centre{
+    display: flex;
+    justify-content: center;
 }
 
 @media only screen and (max-width: 800px) {
@@ -112,5 +205,31 @@ nav ul{
     .columns{
         display: flex;
         flex-direction: column;
+    }
+
+    .card{
+        width: 300px;
+        height: 700px;
+    }
+    .picture-text{
+        display: flex;
+        flex-direction: column; 
+    }
+}
+
+@media only screen and (max-width: 1400px){
+    .image-carousel{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .photo{
+        width: 350px;
+        margin: auto;
+        margin-top: 10px;
+    }
+    .slider-image{
+        margin: auto;
+        margin-top: 10px;
     }
 }
